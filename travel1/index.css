@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    background: #fff;
+}
+html::webkit-scroll-bar{
+    color: red;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12px;
+    height: 5em;
+    border-bottom: 2px solid #000;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}  
+.container .profile .profile-img .img{
+    border-radius: 10px;
+}
+.name p{
+    font-weight: 400;
+    font-size: 1em;
+}
+.name h3{
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.icon-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F0F0F0;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+    background: #f0f0f0;
+}
+.icon i{
+    font-size: 1.3em;
+    padding: 1em;
+}
+.search-area{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 7.5em;
+    margin-top: 0.8em;
+}
+.search-area .sticky{
+    position: sticky;
+    top: 10px;
+}
+.search-area .search-bar{
+    padding: 0 12px;
+}
+.search-area .search-bar input{
+    position: sticky;
+    bottom: 10px;
+    width: 100%;
+    height: 3em;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    outline: none;
+    padding: 18px 15px 15px 18px;
+}
+.search-area .search-bar .sb{
+    position: absolute;
+    display: grid;
+    place-items: center; 
+    background: #57c452;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    bottom: 4.5px;
+    right: 22px;
+}
+.search-area .search-bar i{
+    font-size: 1.3em;
+    color: #000;
+}
+.categories{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 12px;
+    margin-top: 0.8em;
+}
+.categories .cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    width: 7.5em;
+    height: 2em;
+    margin: 0 5px;
+    border-radius: 50px;
+    background: #f0f0f0;
+}
+.cat i{
+    margin-right: 5px;
+}
+.main{
+    margin-top: 0.2em;
+}
+.main .img{
+    width: 100%;
+    height: 250px;
+    background: url("search.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.main .main-info{
+    padding: 2px 12px;
+}
+.popular{
+    margin-top: 40px;
+}
+.popular h2{
+    font-weight: 500;
+}
+.places1{
+    margin-top: 1em;
+    width: 100%;
+}
+.places1 .p-sub .boxhh{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.places1 .boxh p,
+.places1 .boxh2 p{
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.places1 .p-sub .boxh2{
+    margin-right: 7%;
+}
+.places1 .box1{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: url("img/miami2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+}
+.places1 .box2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: url("img/china.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+    margin-top: 8px;
+}
+.places1 .box3{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: url("img/ny2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+}
+.places1 .box4{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: url("img/miami.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+    margin-top: 8px;
+}
+.places1 a{
+    display: grid;
+    place-items: center;
+    color: #57c452;
+    margin-top: 1.5em;
+}
+.top{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.places2 h2{
+    font-weight: 0;
+}
+.places2{
+    display: flex;
+    justify-content: center;
+    align-center: center;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 15px;
+}
+.places2 .box{
+    width: 100%;
+    height: 200px;
+    background: #eaeaea;
+    border-radius: 20px;
+}
+.places2 .box .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.3em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.places2 .box .text p{
+    font-size: 1.1em;
+    color: #000;
+    font-weight: 600;
+}
+.places2 .box .text button{
+    width: 6em;
+    height: 2em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #57c452;
+    font-weight: 700;
+    border-radius: 50px;
+}
+.places2 .box1{
+    width: 100%;
+    height: 140px;
+    border-radius: 20px;
+    background: url("img/london2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+}
+.places2 .box2{
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    background: url("img/china.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+}
+.places2 .box3{
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    background: url("img/miami2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+}
+.places2 .box4{
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    background: url("img/london.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+}
+.places2 .box5{
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    background: url("img/ny.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+}
+.places2 a{
+    display: grid;
+    place-items: center;
+    color: #57c452;
+    margin-top: -0.8em;
+}
+.nav{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
+}
+.nav .i-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+.i-nav .n-icon i{
+    font-size: 1.5em;
+    color: #000;
+    transition-duration: 0.4s;
+}
+.n-icon i:hover{
+    color: #57c452;
+    font-size: 2em;
+    transform: translateY(-3px);
+}
+.foot-stuffs{
+    margin-top: -4em;
+    margin-bottom: 5em;
+    width: 100%;
+}
+.fi-cont{
+    display: grid;
+    place-items: center;
+    border-top: 1px solid #000;
+    margin: 0 2em;
+}
+.f-text{
+    margin-top: 6px;
+}
+.fi-cont .icons{
+    margin-top: 8px;
+}
+.fi-cont .icons i{
+    font-size: 2em;
+    margin: 0 10px;
+    background: #f0f0f0;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+.foot-stuffs .note{
+    color: #57c452;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
